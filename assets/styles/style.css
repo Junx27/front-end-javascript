@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.fa-solid {
+  font-size: 12px;
+}
+i {
+  color: orange;
+  padding-right: 20px;
+}
+body,
+input,
+button {
+  font-family: "Sulphur Point", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  background-color: orange;
+}
+.navbar input {
+  padding: 10px 20px;
+  border: none;
+  margin-right: -20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: white;
+}
+.navbar h3 {
+  margin: 0;
+  padding: 30px;
+  padding-left: 50px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.head-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+#submitMencari {
+  color: white;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#submitMencari:hover {
+  background-color: rgb(28, 26, 26);
+}
+.newbutton {
+  color: white;
+  font-weight: 700;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.newbutton:hover {
+  background-color: rgb(232, 155, 14);
+}
+.container {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.input-section h1 {
+  font-size: 18px;
+}
+.navigasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-inActive {
+  width: 0px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -200px;
+  z-index: 9;
+  background-color: white;
+  padding: 10px 20px;
+  padding-bottom: 30px;
+  top: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.input-active {
+  margin-top: 20px;
+  margin-left: -20px;
+  width: 300px;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  padding: 10px 20px;
+  padding-bottom: 30px;
+  top: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.input input {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.input textarea {
+  margin-top: 10px;
+  height: 150px;
+  padding: 10px 20px;
+}
+.input-inline {
+  margin: 20px 0;
+  display: block;
+}
+.input-image {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input-image #upload-image {
+  display: none;
+}
+.input-image img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.input-image .upload-active {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  color: white;
+}
+.input-image .upload-inActive {
+  display: none;
+}
+.input-image .close-active {
+  color: black;
+  position: absolute;
+  top: 25px;
+  right: 55px;
+  cursor: pointer;
+}
+.input-image .close-inActive {
+  display: none;
+  color: black;
+  position: absolute;
+  top: 25px;
+  right: 55px;
+  cursor: pointer;
+}
+.input-kategori {
+  margin-top: 20px;
+}
+#kategori {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+#submitBuku {
+  background-color: orange;
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+.buku {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: black;
+  position: relative;
+}
+.buku .title {
+  position: absolute;
+  bottom: 32%;
+  color: white;
+}
+.buku .horror {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  color: white;
+  background-color: orange;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.buku .drama {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  color: white;
+  background-color: blue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.buku .komedi {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  color: black;
+  background-color: greenyellow;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.buku .anime {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  color: white;
+  background-color: purple;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.buku .fantasi {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 100px;
+  color: black;
+  background-color: aqua;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.buku img {
+  width: 100%;
+  height: 150px;
+  filter: brightness(70%);
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.buku h2 {
+  padding: 20px;
+}
+.buku h5 {
+  padding: 5px 20px;
+  color: black;
+}
+.buku .deskripsi {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  padding: 10px;
+  background-color: orange;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.hapus {
+  width: 50%;
+  background-color: black;
+  border: none;
+  padding: 15px;
+  color: white;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+.hapus:hover {
+  background-color: rgb(49, 47, 47);
+}
+.pindahkan {
+  width: 50%;
+  background-color: black;
+  border: none;
+  padding: 15px;
+  color: white;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+.pindahkan:hover {
+  background-color: rgb(49, 47, 47);
+}
+.kontrol {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.kontrol button {
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.kontrol button:hover {
+  background-color: rgb(46, 45, 45);
+}
+
+.daftar-semua-buku {
+  margin-top: 50px;
+}
+.belum-terbaca,
+.terbaca {
+  width: 300px;
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  border: 1px solid #000;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.belum-terbaca span,
+.terbaca span {
+  margin-right: 20px;
+  color: orange;
+  background-color: black;
+  padding: 5px;
+}
