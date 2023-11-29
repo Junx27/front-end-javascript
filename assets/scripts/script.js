@@ -329,3 +329,31 @@ kembali.addEventListener("click", () => {
   modal.classList.add("input-inActive");
   modal.classList.remove("input-active");
 });
+
+const tombolKategori = document.getElementById("kategori-inActive");
+const modalKategori = document.getElementById("kontrol");
+const kembaliKategori = document.getElementById("close-kategori");
+tombolKategori.addEventListener("click", () => {
+  modalKategori.classList.add("kontrol-active");
+  modalKategori.classList.remove("kontrol-inActive");
+  kembaliKategori.classList.add("close-kategori-active");
+  kembaliKategori.classList.remove("close-kategori-inActive");
+});
+kembaliKategori.addEventListener("click", () => {
+  modalKategori.classList.add("kontrol-inActive");
+  modalKategori.classList.remove("kontrol-active");
+  kembaliKategori.classList.add("close-kategori-inActive");
+  kembaliKategori.classList.remove("close-kategori-active");
+});
+window.addEventListener("scroll", () => {
+  modalKategori.classList.add("kontrol-inActive", window.screenY > 300);
+  modalKategori.classList.remove("kontrol-active", window.screenY > 300);
+  kembaliKategori.classList.add(
+    "close-kategori-inActive",
+    window.screenY > 300
+  );
+  kembaliKategori.classList.remove(
+    "close-kategori-active",
+    window.screenY > 300
+  );
+});
