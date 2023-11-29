@@ -346,14 +346,10 @@ kembaliKategori.addEventListener("click", () => {
   kembaliKategori.classList.remove("close-kategori-active");
 });
 window.addEventListener("scroll", () => {
-  modalKategori.classList.add("kontrol-inActive", window.screenY > 300);
-  modalKategori.classList.remove("kontrol-active", window.screenY > 300);
-  kembaliKategori.classList.add(
-    "close-kategori-inActive",
-    window.screenY > 300
-  );
-  kembaliKategori.classList.remove(
-    "close-kategori-active",
-    window.screenY > 300
-  );
+  if (window.scrollY >= 10) {
+    modalKategori.classList.add("kontrol-inActive");
+    modalKategori.classList.remove("kontrol-active");
+    kembaliKategori.classList.add("close-kategori-inActive");
+    kembaliKategori.classList.remove("close-kategori-active");
+  }
 });
